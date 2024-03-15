@@ -42,7 +42,7 @@ body {
 .fluffy-card {
     position: absolute;
     bottom: -15dvh;
-    max-width: 100dvh;
+    max-width: 95dvh;
 }
 
 .fluffy-offset {
