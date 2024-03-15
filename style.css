@@ -2,6 +2,18 @@ body {
     font-family: Lato, Arial, Helvetica, sans-serif;
 }
 
+.bronze {
+    background-color: #CD7F32;
+}
+
+.teal {
+    color: #008080;
+}
+
+.bteal {
+    border-color: #008080;
+}
+
 .img-hero {
     background-image: url(https://plus.unsplash.com/premium_photo-1682001193548-9f70207a0acf?q=80&w=2659&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     min-height: 65dvh;
@@ -12,6 +24,19 @@ body {
 
 .textbox {
     height: 100px;
+}
+
+.lato-black {
+    font-weight: bolder;
+}
+
+.fader {
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.fader:hover {
+    opacity: 1.0;
 }
 
 .fluffy-card {
@@ -32,6 +57,7 @@ body {
 
 .img-yarn {
     max-height: 50dvh;
+    border: 8px solid white;
 }
 
 .img-map {
@@ -49,8 +75,8 @@ body {
 }
 
 .reviewer {
-    font-variant: small-caps;
-    color: royalblue;
+    color: #CC5500;
+    text-align: center;
 }
 
 @media (max-width: 760px) {
