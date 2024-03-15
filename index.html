@@ -20,7 +20,7 @@
         defer></script>
 </head>
 
-<body class="debug">
+<body>
     <nav class="container-fluid bg-success p-0 sticky-top">
         <section class="row">
             <div class="col-12">
@@ -30,25 +30,42 @@
     </nav>
 
     <header class="container-fluid p-0">
-        <section class="row d-flex justify-content-start img-hero p-4">
-            <div class="col-12 col-md-4 bg-light shadow d-flex align-items-center p-4">
-                <div class="p-2">
-                    <form action="submit">
-                        <input type="text" id="first-name" placeholder="Josephine">
-                        <label for="first-name">First name</label>
-                        <input type="text" id="last-name" placeholder="Danger">
-                        <label for="last-name">Last name</label>
-                        <input type="text" name="email" id="email" placeholder="Your valid email">
-                        <label for="email">Valid Email</label>
-                        <input type="textbox" for="more-info" placeholder="Tell us about your hoard">
-                        <label for="more-info">Your yarnbusting concerns</label>
-                        <input type="checkbox" id="need-yarnbusting" name="yes-yarnbusting">
-                        <label for="need-yarnbusting">I want yarnbusting</label>
-                        <input type="checkbox" id="need-yarn" name="yes-yarn">
-                        <label for="need-yarn">I want yarn</label>
-                        <button class="btn btn-success">Subscribe</button>
-                    </form>
-                </div>
+        <section class="row d-flex justify-content-start img-hero m-0 p-4">
+            <div class="col-12 col-md-4 bg-light shadow d-flex align-items-center p-4 rounded-2">
+                <form action="submit" class="container-fluid">
+                    <div class="row mb-3">
+                        <div class="col form-floating">
+                            <input type="text" class="form-control p-0" id="first-name">
+                            <label for="first-name">First name</label>
+                        </div>
+                        <div class="col form-floating">
+                            <input type="text" class="form-control" id="last-name">
+                            <label for="last-name">Last name</label>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col form-floating">
+                            <input type="text" class="form-control" name="email" id="email">
+                            <label for="email">Valid Email</label>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <input type="checkbox" id="need-yarnbusting" name="yes-yarnbusting">
+                            <label for="need-yarnbusting">I want yarnbusting</label>
+                            <input type="checkbox" id="need-yarn" name="yes-yarn">
+                            <label for="need-yarn">I want yarn</label>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <input type="textbox" class="textbox w-100" for="more-info">
+                            <label for="more-info">Your yarnbusting concerns</label>
+                        </div>
+                    </div>
+                    <button class="btn btn-success shadow">Subscribe</button>
+                </form>
+            </div>
             </div>
             <div class="col-12 col-md-8" p-4>
                 <div class="border-start border-4 p-3 hide-small">
@@ -62,51 +79,52 @@
 
     <main class="container-fluid p-0">
         <section class="row bg-success fluffy-offset rm-fluffy-offset">
-            <div class="col-12 col-md-5 p-4 order-2 order-md-1">
-                <h3>A Yarnbusters, we do miracles</h3>
-                <p>Why can't we say no to yarn in the store just for it to rot at home? It's part of the fiber works
+            <div class="col-12 col-md-5 p-4 order-2 order-md-1 text-light">
+                <h3 class="ms-2">A Yarnbusters, we do miracles</h3>
+                <p class="ms-3">Why can't we say no to yarn in the store just for it to rot at home? It's part of the
+                    fiber works
                     dilemma. We understand your needs and can make your life not just good but darn great.</p>
             </div>
             <div class="col-12 col-md-7 order-1 order-md-2">
                 <div class=" container-fluid fluffy-card rm-fluffy-card shadow bg-white p-4 text-dark">
-                    <div class="row">
+                    <div class="row d-flex align-items-center">
                         <div class="col-1">
                             <span class="mdi mdi-weight-lifter fs-3 text-success"></span>
                         </div>
                         <div class=" col-9">
-                            <p>We do the lifting so you don't have to.</p>
+                            <p class="mb-0">We do the lifting so you don't have to.</p>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row d-flex align-items-center">
                         <div class="col-1">
                             <span class="mdi mdi-forklift fs-3 text-success"></span>
                         </div>
                         <div class=" col-9">
-                            <p>Our warehouse is specifically maintained by sheep.</p>
+                            <p class="mb-0">Our warehouse is specifically maintained by sheep.</p>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row d-flex align-items-center">
                         <div class="col-1">
                             <span class="mdi mdi-home-silo fs-3 text-success"></span>
                         </div>
                         <div class="col-9">
-                            <p>Even on a county road grid you'll spend half a day trying to find us.</p>
+                            <p class="mb-0">Even on a county road grid you'll spend half a day trying to find us.</p>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row d-flex align-items-center">
                         <div class="col-1">
                             <span class="mdi mdi-cow-off fs-3 text-success"></span>
                         </div>
                         <div class=" col-9">
-                            <p>No cows will be near - only sheep!</p>
+                            <p class="mb-0">No cows will be near - only sheep!</p>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row d-flex align-items-center">
                         <div class="col-1">
                             <span class="mdi mdi-wizard-hat fs-3 text-success"></span>
                         </div>
                         <div class=" col-9">
-                            <p>Our powers are mighty and wooly. Acrylics accepted too.</p>
+                            <p class="mb-0">Our powers are mighty and wooly. Acrylics accepted too.</p>
                         </div>
                     </div>
                 </div>
@@ -115,42 +133,49 @@
 
 
         <section class="row p-3">
-            <div class="col-12 col-md-6 p-4">
+            <div class="col-12 col-md-6 p-4 d-flex justify-content-center">
                 <img src="https://images.unsplash.com/photo-1550376026-7375b92bb318?q=80&w=2808&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt="Tons of Yarn in a Standard Kallax" class="img-yarn border border-light border-4 shadow">
 
             </div>
             <div class="col-12 col-md-6 p-4">
-                <p class=" fs-1 text-success text-center"><span class="mdi mdi-shield-sword"></span></p>
+                <p class="fs-1 text-success text-center"><span class="mdi mdi-shield-sword"></span></p>
                 <h5>Clear that stash with little to no effort on your part.</h5>
-                <p>We all have bins and bins of yarn. We all feel that guilt of knowing that yarn won't be put to use in
+                <p class="ps-3">We all have bins and bins of yarn. We all feel that guilt of knowing that yarn won't be
+                    put to use in
                     any
                     way as long as we own it and don't knit, crochet, tatt, or felt it. It deserves better and so do
                     you. Choose our yarnbusting services and watch your yarn become a part of our problem, not yours.
                     Say no to hoarding.</p>
-                <button class="btn btn-success text-end">See our services</button>
+                <div class="d-flex justify-content-end">
+                    <button class="btn btn-success shadow">See our services</button>
+                </div>
             </div>
 
         </section>
 
         <section class="row d-flex justify-content-evenly align-items-center background-grey p-4">
-            <div class="col-12 col-md-3 card order-2 order-md-1">
+            <div class="col-12 col-md-3 card order-2 order-md-1 shadow">
                 <span class="mdi mdi-comment-quote fs-2"></span>
-                <p>Yarnbusters busted my yarn! I didn't even want them to and it was already gone!</p>
+                <p class="ps-4">Yarnbusters busted my yarn! I didn't even want them to and it was already gone!</p>
                 <p class="reviewer">- Winifred McMasters, yarn enthusiast</p>
 
             </div>
-            <div class="col-12 col-md-3 card order-1 order-md-2">
-                <p class="text-center fs-1 text-warning"><span class="mdi mdi-star-circle-outline"></span><span
+            <div class="col-12 col-md-3 card order-1 order-md-2 shadow">
+                <p class="text-center fs-1 text-warning mb-0"><span class="mdi mdi-star-circle-outline"></span><span
                         class="mdi mdi-star-circle-outline"></span><span class="mdi mdi-star-circle-outline"></span></p>
                 <span class="mdi mdi-comment-quote fs-2"></span>
-                <p>I can't believe they busted my yarn so fast. I didn't even have time to pet it before it became
+                <p class="ps-4">I can't believe they busted my yarn so fast. I didn't even have time to pet it
+                    before it
+                    became
                     sweaters and hats for people who won't properly appreciate them.</p>
                 <p class="reviewer">- Stone Cold Knit Omaha, yarn hoarder</p>
             </div>
-            <div class="col-12 col-md-3 card order-3 order-md-3">
+            <div class="col-12 col-md-3 card order-3 order-md-3 shadow">
                 <span class="mdi mdi-comment-quote fs-2"></span>
-                <p>The classiest yarnbusting joint this side of the Missouri River. They took it and busted it.</p>
+                <p class="ps-4">The classiest yarnbusting joint this side of the Missouri River. They took it and
+                    busted
+                    it.</p>
                 <p class="reviewer">- Crafty Jones, lover of wool</p>
             </div>
 
@@ -160,26 +185,26 @@
     </main>
 
     <footer class="container-fluid p-0">
-        <section class="row img-map p-0">
+        <section class="row img-map m-0 p-0">
             <div class="col-12">
             </div>
         </section>
 
 
-        <section class="row  background-grey p-3">
+        <section class="row d-flex align-items-center background-grey p-3">
             <div class="col-4 lh-1">
-                <p>Visit Us</p>
-                <p>1100662 County Road 16</p>
-                <p>Mitchell, Nebraska 69357</p>
+                <p class="m-0">Visit Us</p>
+                <p class="m-0">1100662 County Road 16</p>
+                <p class="m-0">Mitchell, Nebraska 69357</p>
             </div>
             <div class="col-4 lh-1">
-                <p>Contact Us</p>
-                <p>Email: sheep@yarnbusters.com</p>
-                <p>Phone: 555-555-BAAA</p>
+                <p class="m-0">Contact Us</p>
+                <p class="m-0">Email: sheep@yarnbusters.com</p>
+                <p class="m-0">Phone: 555-555-BAAA</p>
             </div>
             <div class="col-4 fs-1 text-success">
                 <div class="row">
-                    <div class="col-12 d-flex justify-content-center">
+                    <div class="col-12 d-flex justify-content-center align-items-center">
                         <p><span class="mdi mdi-facebook p-1"></span></p>
                         <p><span class="mdi mdi-steam p-1"></span></p>
                         <p><span class="mdi mdi-youtube p-1"></span></p>

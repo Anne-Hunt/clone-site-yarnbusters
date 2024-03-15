@@ -10,6 +10,10 @@ body {
     max-width: 100%;
 }
 
+.textbox {
+    height: 100px;
+}
+
 .fluffy-card {
     position: absolute;
     bottom: -15dvh;
