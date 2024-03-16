@@ -24,9 +24,24 @@
 
 <body>
 
-    <nav class="navbar bronze sticky-top m-0 p-0">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><span class="mdi mdi-sheep fs-1 text-light logo"></span></a>
+    <nav class="navbar navbar-expand-md bronze sticky-top m-0 p-0">
+        <div class="container-fluid ps-4">
+            <a class="navbar-brand" href="#">
+                <span class="mdi mdi-sheep fs-1 text-light logo"></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link text-light active" aria-current="page" href="#home">Home</a>
+                    <a class="nav-link text-light" href="#sheepservice">Sheep Service</a>
+                    <a class="nav-link text-light" href="#reviews">Reviews</a>
+                    <a class="nav-link text-light" href="#location">Location</a>
+                </div>
+            </div>
+
         </div>
     </nav>
 
@@ -81,7 +96,7 @@
     </header>
 
     <main class="container-fluid p-0 m-o">
-        <section class="row bronze fluffy-offset rm-fluffy-offset me-0">
+        <section id="home" class="row bronze fluffy-offset rm-fluffy-offset me-0">
             <div class="col-12 col-md-5 p-4 order-2 order-md-1 text-light">
                 <h3 class="ms-2">At Yarnbusters we do miracles</h3>
                 <p class="ms-3">Why can't we say no to yarn in the store just for it to rot at home? It's part of the
@@ -135,7 +150,7 @@
         </section>
 
 
-        <section class="row p-3">
+        <section id="sheepservice" class="row p-3">
             <div class="col-12 col-md-4 p-4 d-flex justify-content-center">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/9mcNIqBrrFo?si=ImfnBj-bMdmCcOwP"
                     title="YouTube video player" frameborder="0"
@@ -164,7 +179,7 @@
         </section>
 
         <section class="row d-flex justify-content-evenly align-items-center background-grey p-4 m-0">
-            <div class="col-12 col-md-3 card order-2 order-md-1 shadow">
+            <div id="reviews" class="col-12 col-md-3 card order-2 order-md-1 shadow">
                 <span class="mdi mdi-comment-quote fs-2"></span>
                 <p class="ps-4">Yarnbusters busted my yarn! I didn't even want them to and it was already gone!</p>
                 <p class="reviewer">- Winifred McMasters, yarn enthusiast</p>
@@ -194,7 +209,7 @@
     </main>
 
     <footer class="container-fluid p-0">
-        <section class="row img-map m-0 p-0">
+        <section id="location" class="row img-map m-0 p-0">
             <div class="col-12">
             </div>
         </section>
