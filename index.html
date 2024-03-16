@@ -35,10 +35,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link text-light active" aria-current="page" href="#home">Home</a>
-                    <a class="nav-link text-light" href="#sheepservice">Sheep Service</a>
-                    <a class="nav-link text-light" href="#reviews">Reviews</a>
-                    <a class="nav-link text-light" href="#location">Location</a>
+                    <a class="nav-link text-light active fader" aria-current="page" href="#home">Home</a>
+                    <a class="nav-link text-light fader" href="#sheepservice">Sheep Service</a>
+                    <a class="nav-link text-light fader" href="#reviews">Reviews</a>
+                    <a class="nav-link text-light fader" href="#location">Location</a>
                 </div>
             </div>
 
@@ -50,17 +50,17 @@
             <div class="col-12 col-md-4 bg-light shadow d-flex align-items-center p-4 rounded-2 m-0 ">
                 <form action="submit" class="container-fluid">
                     <div class="row mb-3">
-                        <div class="col form-floating">
-                            <input type="text" class="form-control p-0" id="first-name">
+                        <div class="col">
+                            <input type="text" class="form-control" id="first-name">
                             <label for="first-name">First name</label>
                         </div>
-                        <div class="col form-floating">
+                        <div class="col">
                             <input type="text" class="form-control" id="last-name">
                             <label for="last-name">Last name</label>
                         </div>
                     </div>
                     <div class="row mb-3">
-                        <div class="col form-floating">
+                        <div class="col">
                             <input type="text" class="form-control" name="email" id="email">
                             <label for="email">Valid Email</label>
                         </div>
@@ -79,12 +79,12 @@
                             <label for="more-info">Your yarnbusting concerns</label>
                         </div>
                     </div>
-                    <button class="btn bg-warning shadow fader text-dark">Subscribe</button>
+                    <button class="btn bg-warning shadow fader text-dark">Submit</button>
                 </form>
             </div>
-            <div class="col-12 col-md-8 d-flex align-items-end">
+            <div class="col-12 col-md-8 d-flex align-items-end p-3">
                 <div
-                    class="text-light border-start border-4 bteal p-3 hide-small lato-black bg-dark bg-opacity-25 rounded-1">
+                    class="text-light border-start border-4 border-warning p-3 hide-small bg-dark bg-opacity-50 rounded-1">
                     <h1>Turning yarn space into free space</h1>
                     <p class="fs-4">As seen in local thrift stores but with better chances of becoming an object
                         instead of a
